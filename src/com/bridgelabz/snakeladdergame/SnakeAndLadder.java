@@ -40,6 +40,20 @@ public class SnakeAndLadder {
                         System.out.println("no change");
                         break;
                 }
+                if(pos<=100) {
+                    pos+=p;
+                    System.out.println("current position:"+pos );
+                }
+                else if(pos==100) {
+                    break;
+                }
+                else if(pos>100) {
+                    pos-=p;
+                    break;
+                }
+                else {
+                    break;
+                }
 
 
             }
