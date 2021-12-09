@@ -10,7 +10,8 @@ public class SnakeAndLadder {
         if(c == 0) {		//player start at 0 position
             System.out.println("we start it now");
             //rolling the dice to get the number and showing the position
-            for(int i=0;i<6;i++) {
+
+            while(pos<=100) {//repeating the process until reach to 100 position
                 p = (int) Math.floor(Math.random() * 10) % 5+1;//dice roll to get number using random function
                 System.out.println("dice rolled:"+p);
                 pos += p;
@@ -40,7 +41,9 @@ public class SnakeAndLadder {
                         break;
                 }
 
+
             }
+
 
         }
     }
